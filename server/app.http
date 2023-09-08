@@ -1,0 +1,158 @@
+GET  http://localhost:5010/
+###
+POST http://localhost:5010/signup/
+Content-Type: application/json
+
+{
+   "type":"jobseeker",
+   "fullname":"umadevi",
+   "email":"umadevi@gmail.com",
+   "mobilenumber":"6305873556",
+   "password":"123",
+   "confirmpassword":"123"
+     
+}
+###
+POST http://localhost:5010/login
+Content-Type: application/json
+
+{
+       "email":"uma@gmail.com",
+          "password":"123"
+
+
+}
+###
+POST http://localhost:5010/browsejobs
+Content-Type: application/json
+
+{   
+       "title":"testing",
+        "salary":"4-2LPA",
+        "description":"\nJob Title: Test Engineer\n\nJob Summary:\nWe are seeking a skilled Test Engineer to join our quality assurance team. As a Test Engineer, you will be responsible for designing, implementing, and executing test strategies to ensure the quality and reliability of our software products. You will work closely with the development team to identify and report defects, as well as collaborate with cross-functional teams to ensure the delivery of high-quality software solutions. The ideal candidate should have a strong understanding of software testing methodologies, excellent problem-solving skills, and a passion for delivering top-notch software products.\n\nResponsibilities:\n\nTest Planning: Collaborate with project stakeholders to create comprehensive test plans, including test cases, test data, and test environments.\n\nTest Execution: Execute manual and automated tests to identify defects and ensure the functionality and quality of software products.\n\nDefect Reporting: Identify, document, and track defects using issue tracking systems, and work with development teams to resolve and verify fixes.\n\nTest Automation: Develop and maintain automated test scripts to increase test coverage and efficiency.\n\nRegression Testing: Conduct regular regression testing to validate software functionality after changes or updates.\n\nPerformance Testing: Design and execute performance tests to assess application responsiveness and scalability.\n\nSecurity Testing: Conduct security testing to identify vulnerabilities and ensure the security of the software.\n\nCompatibility Testing: Verify software compatibility across different browsers, operating systems, and devices.\n\nDocumentation: Create and maintain test documentation, including test plans, test cases, and test reports.\n\nContinuous Improvement: Propose and implement process improvements and best practices to enhance testing efficiency and effectiveness.\n\nCollaboration: Work closely with developers, product managers, and other stakeholders to ensure effective communication and understanding of project requirements.\n\nProduct Validation: Validate new features and enhancements to ensure they meet the specified requirements and user expectations.\n\nRequirements:\n\nTesting Expertise: Strong understanding of software testing methodologies, including manual and automated testing.\n\nTest Automation Skills: Experience with test automation tools and frameworks, such as Selenium, JUnit, TestNG, or similar.\n\nBug Tracking: Familiarity with issue tracking systems like Jira or Bugzilla to report and manage defects.\n\nTest Planning and Execution: Ability to create test plans, design test cases, and execute test scenarios effectively.\n\nProblem-Solving Skills: Excellent problem-solving and analytical abilities to identify and troubleshoot issues.\n\nTechnical Aptitude: Proficiency in programming languages (e.g., Java, Python) is a plus.\n\nCommunication Skills: Strong verbal and written communication skills for effective collaboration and reporting.\n\nEducation and Experience:\n\nBachelor's degree in Computer Science, Software Engineering, or a related field (or equivalent work experience).\n\nProven experience as a Test Engineer, Software Tester, or Quality Assurance Analyst.\n\nPreferred (Not Required):\n\nKnowledge of Agile development methodologies.\n\nExperience with performance testing tools (e.g., JMeter, LoadRunner).\n\nUnderstanding of security testing tools and techniques (e.g., OWASP).\n\nFamiliarity with Continuous Integration/Continuous Deployment (CI/CD) pipelines.\n\nTesting certifications (e.g., ISTQB) would be a plus.\n\nNote that job descriptions may vary depending on the company and specific projects involved. The above description provides a general outline of the role and its responsibilities as a Test Engineer.",
+        "companyname":"cognizant",
+        "cities": "kadapa",
+        "experience":"5-7years",
+        "education":"B-tech",
+        "skillsets":"C,C++",
+        "jobtype":"Full Time",
+        "Img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpVqk0hiTyPmTtIjRM7ji0cmRubLRrZlu77w&usqp=CAU",
+        "email":"uma@gmail.com"  
+}
+
+###
+GET http://localhost:5010/allbrowsers
+
+###
+DELETE http://localhost:5010/user/64e3d1b28eac05bf639732c0
+
+###
+POST http://localhost:5010/profile
+Content-Type: application/json
+
+{
+   "fullname":"kiran",
+   "State":"AP",
+   "Currentlocation":"kakinada",
+   "mobile":"6765786556",
+   "emailE1":"kiran@gmail.com"
+
+}
+###
+GET http://localhost:5010/allprofiles
+###
+POST http://localhost:5010/changepassword
+Content-Type: application/json
+
+{
+    "OldPassword":"uma",
+    "NewPassword":"uma@12",
+    "CofirmPassword":"uma@12"
+
+}
+###
+GET http://localhost:5010/allpassword
+###
+POST http://localhost:5010/payment
+Content-Type: application/json
+
+{
+   "fullname":"uma",
+   "email":"uma@gmail.com",
+   "mobilenumber":"425896344",
+   "amount":"1000"
+  
+
+}
+###
+POST http://localhost:5010/heading
+Content-Type: application/json
+
+{
+
+"heading":"umadevi"
+  
+}
+###
+POST http://localhost:5010/profilesummary
+Content-Type: application/json
+
+{
+
+"ProfileSummary":"3 years exprince of the software developer"
+  
+}
+###
+POST http://localhost:5010/profileskils
+Content-Type: application/json
+
+{
+
+"keyskils":"java"
+  
+}
+###
+POST http://localhost:5010/Accomplishment
+Content-Type: application/json
+
+{
+
+"Accomplishm":"work"
+  
+}
+###
+POST http://localhost:5010/WorkSample
+Content-Type: application/json
+
+{
+
+"WorkSample":"github"
+  
+}
+###
+POST http://localhost:5010/publication
+Content-Type: application/json
+
+{
+
+"publication":"publication by ram"
+  
+}
+###
+POST http://localhost:5010/Presentation
+Content-Type: application/json
+
+{
+
+"Presentation":"Presentation by ppt"
+  
+}
+###
+POST http://localhost:5010/patent
+Content-Type: application/json
+
+{
+
+"Patent":"Patent by ppt"
+  
+}
