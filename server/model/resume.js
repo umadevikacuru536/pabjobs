@@ -32,6 +32,14 @@ const productSchema= new mongoose.Schema({
     Patent:{
         type:String,
         require:true,
+    },
+    certification:{
+        type:String,
+        require:true,
+    },
+    careerProfile:{
+        type:String,
+        require:true,
     }
 
 

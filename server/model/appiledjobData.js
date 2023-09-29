@@ -2,13 +2,12 @@ const mongoose=require("mongoose")
 
 const productSchema= new mongoose.Schema({
    
-    type:{
+    title:{
     
         type:String,
-        ear:["applicant","recruiter"],
         require:true,
     },
-    fullname:{
+    salary:{
         type:String,
         require:true,
     },
@@ -16,28 +15,25 @@ const productSchema= new mongoose.Schema({
         type:String,
         require:true,
     },
-    companyemail:{
+    cities:{
+        type:String,
+        require:true,
+    },
+   
+    experience:{
+        type:String,
+        require:true,
+    },
+    Img:{
         type:String,
         require:true,
     },
     email:{
         type:String,
         require:true,
-    },
-    mobilenumber:{
-        type:Number,
-        require:true,
-    },
-    password:{
-        type:String,
-        require:true,
-    },
-   
-    confirmpassword:{
-        type:String,
-        require:true,
-    },
+    }
+    
 })
 
-const userData=mongoose.model("userData",productSchema);
-module.exports =userData;
+const appiledjobData=mongoose.model("appiledjobData",productSchema);
+module.exports =appiledjobData;

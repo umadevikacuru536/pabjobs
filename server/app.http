@@ -6,20 +6,39 @@ Content-Type: application/json
 {
    "type":"jobseeker",
    "fullname":"umadevi",
-   "email":"umadevi@gmail.com",
+   "email":"uma@gmail.com",
    "mobilenumber":"6305873556",
-   "password":"123",
-   "confirmpassword":"123"
+   "password":"Umadevi@12",
+   "confirmpassword":"Umadevi@12"
      
 }
+
+
 ###
 POST http://localhost:5010/login
 Content-Type: application/json
 
 {
-       "email":"uma@gmail.com",
-          "password":"123"
+      "email":"uma@gmail.com",
+      "password":"Umadevi@12"
+}
+###
+POST http://localhost:5010/otp
+Content-Type: application/json
 
+{
+     "mobileNumber":"6305873538",
+     "otp":""
+}
+###
+Get http://localhost:5010/allotp
+###
+POST http://localhost:5010/companylogin
+Content-Type: application/json
+
+{
+      "companyemail":"tcs@gmail.com",
+      "password":"1234"
 
 }
 ###
@@ -40,6 +59,39 @@ Content-Type: application/json
         "email":"uma@gmail.com"  
 }
 
+###
+
+POST http://localhost:5010/appiledjobs
+Content-Type: application/json
+
+{   
+       "title":"testing",
+        "salary":"4-2LPA",
+        "companyname":"cognizant",
+        "cities": "kadapa",
+        "experience":"5-7years",
+        "Img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpVqk0hiTyPmTtIjRM7ji0cmRubLRrZlu77w&usqp=CAU",
+        "email":"cognizant@gmail.com"
+        
+}
+###
+POST http://localhost:5010/savedjobs
+Content-Type: application/json
+
+{   
+       "title":"testing",
+        "salary":"4-2LPA",
+        "companyname":"cognizant",
+        "cities": "kadapa",
+        "experience":"5-7years",
+        "Img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpVqk0hiTyPmTtIjRM7ji0cmRubLRrZlu77w&usqp=CAU",
+        "email":"cognizant115@gmail.com"
+        
+}
+###
+GET http://localhost:5010/allsavedjobs
+###
+GET http://localhost:5010/allappiledjobs
 ###
 GET http://localhost:5010/allbrowsers
 
@@ -65,9 +117,9 @@ POST http://localhost:5010/changepassword
 Content-Type: application/json
 
 {
-    "OldPassword":"uma",
-    "NewPassword":"uma@12",
-    "CofirmPassword":"uma@12"
+    "OldPassword":"uma@4",
+    "NewPassword":"uma@4",
+    "CofirmPassword":"uma@123"
 
 }
 ###
@@ -154,5 +206,23 @@ Content-Type: application/json
 {
 
 "Patent":"Patent by ppt"
+  
+}
+###
+POST http://localhost:5010/certification
+Content-Type: application/json
+
+{
+
+"certification":"certification by react"
+  
+}
+###
+POST http://localhost:5010/careerProfile
+Content-Type: application/json
+
+{
+
+"careerProfile":"certification by react"
   
 }
